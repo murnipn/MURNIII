@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Log - Daily Beauty Journal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Daily Beauty Journal</div>
+      <nav>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tips.html">Tips</a></li>
+            <li><a href="riview.html">Review</a></li>
+            <li><a href="daily log.html" class="active">Daily Log</a></li>
+            <li><a href="favorite.html">Favorites</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="galeri.html"></a>Galeri</li>
+            <li><A href="ingredients.html">Ingredients</a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>📔 Daily Beauty Log</h2>
+    <div class="content-grid">
+      <div class="card" onclick="openModal('log1')">
+        <img src="aset/skincare awal tahun dl.jpg" alt="Log 1">
+        <div class="card-info"><h4>UPDATE SKINCARE AWAL TAHUN</h4><div class="date">🗓️ 1 JANUARI 2025</div></div>
+      </div>
+      <div class="card" onclick="openModal('log2')">
+        <img src="aset/teknik toner 7 lapis.jpg" alt="Log 2">
+        <div class="card-info"><h4>NYOBAIN 7 LAYER TONER</h4><div class="date">🗓️ 3 JUNI 2025</div></div>
+      </div>
+      <div class="card" onclick="openModal('log3')">
+        <img src="aset/cleansing oil teknik.jpg" alt="Log 3">
+        <div class="card-info"><h4>TEKNIK CLEANSING OIL</h4><div class="date">🗓️ 4 JUNI 2025</div></div>
+      </div>
+      <div class="card" onclick="openModal('log4')">
+        <img src="aset/guasha.jpeg" alt="Log 4">
+        <div class="card-info"><h4>FIRST TIME PAKE GUASHA</h4><div class="date">🗓️ 6 JUNI 2025</div></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Daily Beauty Journal | Dibuat dengan hati Murni 💜</p>
+    </div>
+  </footer>
+
+  <div id="log1" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('log1')">&times;</span><h3>Update Skincare Awal Tahun</h3><p>Kulitku tiba-tiba semakin kering, jadi harus ganti produk dari brightening ke hydrating dulu. Produk yang aku pakai: ✨Wardah Hydra Rose, ✨Azarine Hydramax Serum, ✨Hatomugi Skin Conditioning, ✨2 hari sekali pakai sheetmask. Aku update 2 minggu lagi ya, ini udah jalan 3 hari dan sudah membaik.</p></div></div>
+  <div id="log2" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('log2')">&times;</span><h3>Nyobain Teknik Toner 7 Layer</h3><p>Karena aku dry skin, tertarik banget nyobain ini pakai 💦HATOMUGI SKIN CONDITIONER. Yang aku rasain sih udah pasti jadi lembab banget dan glowing. Tapi ini bakalan aku pakai lagi kalau kulit lagi bener-bener kering aja, karena kalau setiap hari cukup makan waktu dan khawatir overmoist.</p></div></div>
+  <div id="log3" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('log3')">&times;</span><h3>Teknik Mengeluarkan Komedo dengan Cleansing Oil</h3><p>Aku coba pakai cleansing oil ✨Hadalabo. Aku pijat di wajah sekitar 4-5 menitan, dan BOOM beneran keluar komedo kecil-kecil mirip wijen! Terutama di hidung dan dagu. Setelah pemakaian, kulit jadi bersih dan halus. Tapi besok paginya timbul beberapa jerawat di jidat. Masih cari tahu kenapa, akan ku-update lagi.</p></div></div>
+  <div id="log4" class="modal"><div class="modal-content"><span class="close-btn" onclick="closeModal('log4')">&times;</span><h3>First Time Pakai Guasha</h3><p>Aku FOMO lihat influencer, akhirnya beli guasha murah di Shopee. Aku coba pakai face oil dan tutorial YouTube. Rasanya enak, rileks, dan bikin skincare meresap. Setelah cari tahu, guasha bukan menaikkan wajah, tapi lebih ke melancarkan peredaran darah, sehingga wajah terlihat lebih segar.</p></div></div>
+
+  <script>function openModal(id){document.getElementById(id).style.display='flex'}function closeModal(id){document.getElementById(id).style.display='none'}</script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tips & Trik - Daily Beauty Journal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Daily Beauty Journal</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tips.html" class="active">Tips</a></li>
+          <li><a href="riview.html">Review</a></li>
+          <li><a href="daily log.html">Daily Log</a></li>
+          <li><a href="favorite.html">Favorites</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="glossary.html">Glossary</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="ingredients.html">Ingredients</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Tips & Trik Skincare 💜</h2>
+    <div class="content-grid">
+      <div class="card" onclick="openModal('modal1')">
+        <img src="aset/Wear Sunscreen.jpeg" alt="Tips Sunscreen">
+        <div class="card-info"><h4>Tips Memilih Sunscreen</h4></div>
+      </div>
+      <div class="card" onclick="openModal('modal2')">
+        <img src="aset/skin type.jpeg" alt="Tips Masker">
+        <div class="card-info"><h4>Cara Tahu Jenis Kulit</h4></div>
+      </div>
+      <div class="card" onclick="openModal('modal3')">
+        <img src="aset/tips glowing.jpeg" alt="Tips Serum">
+        <div class="card-info"><h4>Tips Merawat Kulit dari Dalam</h4></div>
+      </div>
+      <div class="card" onclick="openModal('modal4')">
+        <img src="aset/undertone.jpeg" alt="Double Cleansing">
+        <div class="card-info"><h4>Cara Tahu Undertone Kulit</h4></div>
+      </div>
+      <div class="card" onclick="openModal('modal5')">
+        <img src="aset/skincare pagi.jpg" alt="Moisturizer">
+        <div class="card-info"><h4>Simple Skincare Pagi Ala Aku</h4></div>
+      </div>
+      <div class="card" onclick="openModal('modal6')">
+        <img src="aset/blush on tips.jpg" alt="Eye Cream">
+        <div class="card-info"><h4>Tips Blush On Tahan Lama</h4></div>
+      </div>
+      <div class="card" onclick="openModal('modal7')">
+        <img src="aset/balance makeup.jpg" alt="Skincare Pagi">
+        <div class="card-info"><h4>Tips Balance Makeup Anti Menor</h4></div>
+      </div>
+      <div class="card" onclick="openModal('modal8')">
+        <img src="aset/gambar bibir.jpeg" alt="Lip Care">
+        <div class="card-info"><h4>Tips Merawat Bibir</h4></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Daily Beauty Journal | Dibuat dengan hati Murni 💜</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal1"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal1')">&times;</span><h3>Tips Memilih Sunscreen</h3><ul><li><b>Berdasarkan SPF:</b><ul><li>SPF 30: Cocok untuk kegiatan di dalam ruangan atau keluar sebentar.</li><li>SPF 50: Cocok untuk kegiatan banyak di luar ruangan seperti olahraga atau liburan ke pantai.</li></ul></li><li><b>Berdasarkan Tekstur:</b><ul><li>Cream/Lotion: Cocok untuk dry skin.</li><li>Gel/Water-based: Cocok untuk oily skin.</li><li>Spray/Stick: Praktis untuk reapply tanpa ribet.</li></ul></li></ul></div></div>
+  <div class="modal" id="modal2"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal2')">&times;</span><h3>Trik Cepat Tahu Jenis Kulit</h3><p>Supaya kamu gak salah pilih skincare dan makeup:</p><ul><li>Cuci muka seperti biasa menggunakan facewash yang gentle.</li><li>Keringkan wajah, lalu tunggu selama 30-60 menit tanpa memakai produk apapun.</li><li>Amati dan rasakan wajahmu:<ul><li>Jika seluruh wajah berminyak: <b>Oily Skin</b>.</li><li>Jika terasa kencang/ketarik: <b>Dry Skin</b>.</li><li>Jika biasa saja (tidak kering/berminyak): <b>Normal/Kombinasi</b>.</li></ul></li></ul></div></div>
+  <div class="modal" id="modal3"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal3')">&times;</span><h3>Tips Glowing Luar Dalam</h3><ul><li><b>Jaga Pola Makan:</b> Perbanyak konsumsi buah dan sayuran.</li><li><b>Cukupi Kebutuhan Air:</b> Minum air putih minimal 8 gelas per hari.</li><li><b>Tidur Cukup & Berkualitas:</b> Tidur 6-8 jam sehari dan rajin ganti sarung bantal.</li><li><b>Kelola Stres:</b> Lakukan hobi yang kamu suka, yoga, atau meditasi.</li></ul></div></div>
+  <div class="modal" id="modal4"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal4')">&times;</span><h3>Cara Tahu Undertone Kulit</h3><p>Cek warna urat nadi di pergelangan tanganmu di bawah cahaya:</p><ul><li>Jika berwarna biru/ungu: <b>Cool Undertone</b>.</li><li>Jika berwarna kehijauan: <b>Warm Undertone</b>.</li><li>Jika campuran keduanya: <b>Neutral Undertone</b>.</li></ul></div></div>
+  <div class="modal" id="modal5"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal5')">&times;</span><h3>Urutan Skincare Pagi Simple Ala Aku</h3><p>Aku cuma pakai 3 step!</p><ul><li>Cuci muka hanya dengan air.</li><li>Pakai Toner untuk melembapkan.</li><li>Pakai Serum sesuai kebutuhan kulit.</li><li>Tutup dengan Sunscreen.</li></ul></div></div>
+  <div class="modal" id="modal6"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal6')">&times;</span><h3>Tips Blush-On Tahan Seharian (Teknik Sandwich)</h3><ul><li>Gunakan <b>Cream Blush</b> sebagai dasar.</li><li>Set dengan <b>Loose Powder / Compact Powder</b>.</li><li>Timpa lagi dengan <b>Powder Blush</b> untuk warna lebih intens.</li><li>Kunci dengan <b>Setting Spray</b>.</li></ul></div></div>
+  <div class="modal" id="modal7"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal7')">&times;</span><h3>Tips Balance Makeup Anti Menor</h3><p>Dari 4 bagian (alis, mata, pipi, bibir), pilih maksimal 2 bagian untuk ditonjolkan.</p><p>Contoh: Jika kamu ingin menonjolkan alis (bold) dan pipi (blush on intens), maka riasan mata dan bibir harus dibuat lebih natural/soft.</p></div></div>
+  <div class="modal" id="modal8"><div class="modal-content"><span class="close-btn" onclick="closeModal('modal8')">&times;</span><h3>Tips Merawat Bibir</h3><ul><li><b>Harian:</b><ul><li>Selalu pakai lip balm.</li><li>Gunakan lip balm ber-SPF saat keluar rumah.</li><li>Jangan mengelupas kulit bibir!</li><li>Gunakan lip mask/lip sleeping mask sebelum tidur.</li></ul></li><li><b>Mingguan:</b><ul><li>Lakukan scrub bibir dengan produk lip scrub atau DIY (gula+madu).</li></ul></li></ul></div></div>
+
+  <script>function openModal(id){document.getElementById(id).style.display='flex'}function closeModal(id){document.getElementById(id).style.display='none'}</script>
+</body>
+</html>

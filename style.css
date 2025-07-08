@@ -1,0 +1,337 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf4ff;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 20px auto;
+}
+
+main {
+  padding: 20px 0;
+}
+
+h2 {
+  text-align: center;
+  color: #7b4397;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+header {
+  background-color: #7b4397;
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav ul li a.active {
+  background-color: #ffe2f3;
+  color: #7b4397;
+}
+
+.hero {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+}
+.hero .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #9f6ee6, #cbb4ec);
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+}
+.hero-content {
+  flex: 1;
+  padding-right: 20px;
+}
+.hero-image img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+.button {
+  background-color: white;
+  color: #7b4397;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+.button:hover {
+  transform: scale(1.05);
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(123, 67, 151, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card-info {
+  padding: 15px;
+  background: linear-gradient(to right, #f8d6ff, #e4ccff);
+  text-align: left;
+}
+.card-info h4 {
+  margin: 5px 0;
+  font-size: 1.1em;
+  color: #6a1b9a;
+}
+.card-info .date, .card-info .rating {
+  font-size: 0.9em;
+  color: #4a148c;
+}
+.favorite-item { 
+  padding: 20px;
+  text-align: center;
+}
+.favorite-item img {
+  height: 120px;
+  width: 120px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+.favorite-item .reason {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 10px;
+}
+
+.about-container, .kontak-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+.about-photo {
+  width: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.about-text {
+  flex: 1;
+}
+.kontak-form {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+}
+.kontak-form label { display: block; margin-top: 15px; color: #7b4397; }
+.kontak-form input, .kontak-form textarea { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc; margin-top: 5px; box-sizing: border-box;}
+.kontak-form button { background: #c77dff; color: white; padding: 12px 25px; border: none; margin-top: 20px; border-radius: 10px; cursor: pointer; width: 100%; }
+.kontak-form button:hover { background: #a55cd1; }
+.sosmed { text-align: center; line-height: 1.8; }
+.sosmed a { color: #7b4397; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: white;
+  padding: 25px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  border-radius: 20px;
+  position: relative;
+  text-align: left;
+  line-height: 1.7;
+}
+.close-btn {
+  position: absolute;
+  top: 15px; right: 25px;
+  font-size: 1.8em;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.close-btn:hover { color: #333; }
+.modal-content h3 { color: #7b4397; margin-top: 0; }
+.modal-content ul { padding-left: 20px; }
+
+footer {
+  background-color: #7b4397;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 50px;
+}
+.galeri-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+.galeri-item {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.galeri-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.caption {
+  padding: 10px;
+  font-size: 0.9em;
+  color: #7b4397;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdf4ff;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #7b4397;
+}
+
+.ingredients-container {
+  max-width: 800px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ingredient-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.ingredient-box h3 {
+  color: #6a1b9a;
+  margin-top: 0;
+}
+
+.ingredient-box p {
+  color: #444;
+  line-height: 1.6;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdf4ff;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #7b4397;
+}
+
+.glossary-container {
+  max-width: 800px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.term-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.term-box h3 {
+  margin: 0 0 10px;
+  color: #6a1b9a;
+}
+
+.term-box p {
+  margin: 0;
+  color: #444;
+  line-height: 1.6;
+}
+
